@@ -5,6 +5,16 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'O Marceleza',
+  siteUrl: 'https://omarceleza.github.io',
+  pathPrefix: '/omarceleza'
+  plugins: [
+    {
+        use: 'gridsome-plugin-pug',
+        options:{
+            pug: {},
+            pugLoader: {}
+        }
+    }
+  ]
 }
